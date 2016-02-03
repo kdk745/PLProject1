@@ -37,16 +37,27 @@ public class CustomerDB {
         while (choice.equalsIgnoreCase("y")) {
             //get input from user
             System.out.print("Enter a customer number:");
-            int customerId = sc.nextLine();
+            int customerId = sc.nextInt();
 
-            System.out.println(c1.getId());
-            System.out.println(c1.getName());
-            System.out.println(c1.getAddress());
-            System.out.println(c1.getCity() + ", "+c1.getState()+" "+c1.getPostalCode());
-
+            if (customerId == 1001) {
+                System.out.println(c1.getName());
+                System.out.println(c1.getAddress());
+                System.out.println(c1.getCity() + ", " + c1.getState() + " " + c1.getPostalCode());
+            }else if(customerId == 1002){
+                System.out.println(c2.getName());
+                System.out.println(c2.getAddress());
+                System.out.println(c2.getCity() + ", " + c2.getState() + " " + c2.getPostalCode());
+            }else if(customerId == 1003){
+                System.out.println(c3.getName());
+                System.out.println(c3.getAddress());
+                System.out.println(c3.getCity() + ", " + c3.getState() + " " + c3.getPostalCode());
+            }else{
+                System.out.println("There is no customer number "+ customerId + " in our records.");
+            }
             // see if the user wants to continue
+            System.out.println();
             System.out.print("Display another customer? (y/n): ");
-            choice = sc.nextLine();
+            choice = sc.next();
             System.out.println();
         }
         System.out.println("Bye!");
