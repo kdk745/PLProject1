@@ -1,10 +1,6 @@
 package cannata.Customer;
-
 import java.util.Scanner;
 
-/**
- * Created by kaynekhoury on 2/3/16.
- */
 public class CustomerApp {
     public static void main(String[] args) {
         //
@@ -18,10 +14,9 @@ public class CustomerApp {
             System.out.print("Enter a customer number:");
             int customerId = sc.nextInt();
 
-
-
             Customer cx = new Customer();
             cx = CustomerDB.getCustomer(customerId);
+            System.out.println("");
 
             if (cx!=null) {
                 System.out.print(cx.getNameAndAddress());
