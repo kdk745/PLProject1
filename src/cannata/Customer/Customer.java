@@ -4,7 +4,7 @@ public class Customer{
     private int Id;
     public void setId(int i) {Id = i;}
     public int getId() {return Id;}
-    public Customer(int Id) {this.Id = Id;}
+    //public Customer(int Id) {this.Id = Id;}
 
 
     private String Name;
@@ -26,5 +26,8 @@ public class Customer{
     private int postalCode;
     public void setPostalCode(int p) {postalCode = p;}
     public int getPostalCode() {return postalCode;}
+
+
+    public String getNameAndAddress() {return Name+"\n"+Address+"\n"+City+", "+State+" "+postalCode+"\n";}
 
 }
