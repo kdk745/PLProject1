@@ -1,5 +1,4 @@
 package cannata.Customer;
-import java.text.NumberFormat;
 import java.util.Scanner;
 /**
  * Created by kaynekhoury on 2/3/16.
